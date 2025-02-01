@@ -34,7 +34,7 @@ jobs:
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
-          KEY: ${{ secrets.KEY }}
+          KEY: ${{ secrets.SSH_KEY }}
           script: |
             sudo docker pull deepanshudks/nextapp:latest
             sudo docker stop nextapp || true
